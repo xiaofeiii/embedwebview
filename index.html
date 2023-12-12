@@ -132,15 +132,15 @@
         msdkiOSHandler('closeWebView', data, null);
       } else {
         var data = '{"MsdkMethod":"closeWebView"}'
-        prompt(data)
+        prompt(data) 
       }
     }
 
     function SetPosition() {
       const x = document.getElementById("x").value;
       const y = document.getElementById("y").value;
-      const w = document.getElementById("w").value;
-      const h = document.getElementById("h").value;
+      const w = document.getElementById("width").value;
+      const h = document.getElementById("height").value;
     
       var SetPosition = '{"MsdkMethod":"setPosition", "x":"x", "y":"y", "width":"w", "height":"h"}';
       msdkCall(SetPosition);
