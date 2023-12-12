@@ -136,6 +136,16 @@
       }
     }
 
+    function SetPosition() {
+      const x = document.getElementById("x").value;
+      const y = document.getElementById("y").value;
+      const w = document.getElementById("w").value;
+      const h = document.getElementById("h").value;
+    
+      var SetPosition = '{"MsdkMethod":"setPosition", "x":"x", "y":"y", "width":"w", "height":"h"}';
+      msdkCall(SetPosition);
+    }
+
 	function iOSVisibleOnly() {
 	  var iOSOnlyDiv = document.getElementById("iOS_Only");
 	    if (isiOS()) {
@@ -177,6 +187,15 @@
       <p><input type="button" value="JS数据到Native -&gt; Js -&gt; Native" onclick="msdkCall(JsCallNative)"></p>
       <p><input type="button" value="获取User Agent" onclick="getUserAgent()"></p>
       <p><input type="file" id="22" value="上传文件测试"></p>
+
+      <p>浏览器设置位置和大小</p>
+      <p>
+          <span>x: <input type="text" id="x" size="3"></span>
+          <span>y: <input type="text" id="y" size="3"></span>
+          <span>w: <input type="text" id="width" size="3"></span>
+          <span>h: <input type="text" id="height" size="3"></span>
+        </p>
+      <p><input type="button" value="设置浏览器位置和大小" onclick="SetPosition()"></p>
 
     </div>
     <hr />  
