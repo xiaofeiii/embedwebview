@@ -277,7 +277,9 @@
     var bodyScrollHeight = document.body.scrollHeight; // 获取 body 总高度（包括滚动条高度）
     console.log('body visible height：' + bodyHeight);
     console.log('body height：' + bodyScrollHeight);
-    alert('body visible height：' + bodyHeight);
+    var screenWidth = window.screen.availWidth; // 获取屏幕宽度
+    var screenHeight = window.screen.availHeight; // 获取屏幕高度
+    alert('the screenHeight is: ' + screenHeight + ' ,screenWidth is: ' + screenWidth);
 
     // 测试数据
     // https://is4-ssl.mzstatic.com/image/thumb/Purple125/v4/1b/4c/e7/1b4ce7bb-26cb-dea7-ee94-f0611532a900/AppIcon-1-1x_U007emarketing-85-220-3.png/246x0w.jpg
