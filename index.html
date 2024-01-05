@@ -25,33 +25,6 @@
   <meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1">
   <title>MSDK JavaScript Interface Test Page</title>
 
-  <img src="https://www.baidu.co/img/bd_logo1.png">
-	<script src="https://www.baidu.com/js/bdsug.js"></script>
-	<link rel="stylesheet" href="https://www.baidu.com/css/index.css">
-
-  <img src="https://www.baidu.codd/img/bd_logo1.png">
-	<script src="https://www.baidu.com/js/bdsug.js"></script>
-	<link rel="stylesheet" href="https://www.baidu.com/css/index.css">
-
-  <img src="https://www.baidu.cogjj/img/bd_logo1.png">
-	<script src="https://www.baidu.com/js/bdsug.js"></script>
-	<link rel="stylesheet" href="https://www.baidu.com/css/index.css">
-
-  <img src="https://www.baidu.cojyj/img/bd_logo1.png">
-	<script src="https://www.baidu.com/js/bdsug.js"></script>
-	<link rel="stylesheet" href="https://www.baidu.com/css/index.css">
-
-  <img src="https://www.baidu.cryrho/img/bd_logo1.png">
-	<script src="https://www.baidu.com/js/bdsug.js"></script>
-	<link rel="stylesheet" href="https://www.baidu.com/css/index.css">
-
-  <img src="https://www.baidu.crhryho/img/bd_logo1.png">
-	<script src="https://www.baidu.com/js/bdsug.js"></script>
-	<link rel="stylesheet" href="https://www.baidu.com/css/index.css">
-
-  <img src="https://www.baidu.hfghfhtrco/img/bd_logo1.png">
-	<script src="https://www.baidu.com/js/bdsug.js"></script>
-	<link rel="stylesheet" href="https://www.baidu.com/css/index.css">                           
   <script>
     // msdk javascript封装代码
     var uniqueId = 1
@@ -299,6 +272,11 @@
         document.getElementById("iOSView").style.display = "none"
       }
     }
+
+    var bodyHeight = document.body.clientHeight; // 获取 body 可视高度
+    var bodyScrollHeight = document.body.scrollHeight; // 获取 body 总高度（包括滚动条高度）
+    console.log('body visible height：' + bodyHeight);
+    console.log('body height：' + bodyScrollHeight);
 
     // 测试数据
     // https://is4-ssl.mzstatic.com/image/thumb/Purple125/v4/1b/4c/e7/1b4ce7bb-26cb-dea7-ee94-f0611532a900/AppIcon-1-1x_U007emarketing-85-220-3.png/246x0w.jpg
